@@ -1,0 +1,54 @@
+/* // Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */
+
+// XX-Large devices (larger desktops, 1400px and up)
+
+@mixin widthChanger($width) {
+  .breakpoint-changer {
+    width: $width;
+  }
+
+  /*   header {
+    width: $width;
+  }
+  
+
+  .content {
+    .hero .card {
+      width: $width;
+    }
+    .feautres .row.warp {
+      width: $width;
+    }
+    .blogs .card-group {
+      width: $width;
+    }
+  }
+  .footer .warp {
+    width: $width;
+  } */
+}
+@media (min-width: 576px) {
+  @include widthChanger(556px);
+}
+@media (min-width: 768px) {
+  @include widthChanger(748px);
+}
+@media (min-width: 992px) {
+  @include widthChanger(972px);
+}
+@media (min-width: 1200px) {
+  @include widthChanger(1180px);
+}
+@media (min-width: 1400px) {
+  @include widthChanger(1380px);
+}
