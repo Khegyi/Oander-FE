@@ -1,4 +1,4 @@
-@import "colors";
+/* @import "colors.scss"; */
 
 @mixin widthChanger($width) {
   .breakpoint-changer {
@@ -50,7 +50,7 @@
           right: 0;
           z-index: 0;
           .hero-watch-img {
-            background-image: url("/Oander-FE/img/images/hero_watch_m.png");
+            background-image: url("/Oander-FE/assets/images/hero_watch_m.png");
             z-index: 1;
             height: 242px;
             width: 152px;
@@ -67,7 +67,16 @@
     .features {
       .row.wrap {
         .feature {
-          border: none;
+          &:first-child {
+            border-right: 1px solid rgba($link-color, 0.2);
+            border-bottom: 1px solid rgba($link-color, 0.2);
+          }
+          &:nth-child(2) {
+            border-bottom: 1px solid rgba($link-color, 0.2);
+          }
+          &:nth-child(3) {
+            border-right: 1px solid rgba($link-color, 0.2);
+          }
         }
       }
     }
@@ -119,7 +128,6 @@ footer {
     .features {
       .row.wrap {
         .feature {
-          /*    border: none; */
           &:first-child {
             border-right: 1px solid rgba($link-color, 0.2);
             border-bottom: 1px solid rgba($link-color, 0.2);

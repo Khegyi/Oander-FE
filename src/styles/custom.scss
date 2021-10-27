@@ -1,25 +1,16 @@
-@import "colors";
+/* @import "colors.scss"; */
 
 $fontFamily: "Montserrat";
 
 html {
   font-size: 16px;
 }
-
-.error-message {
-  display: none;
-  margin: 15px 0;
-  color: $error-color;
-}
-
 body {
   background-color: $bg-color !important;
 }
 .dark-hero-bg {
   background-color: $dark-hero-bg-color;
-  /*   display: block; */
   position: absolute;
-  /*   width: calc(50% - 95px); */
   height: 700px;
   right: 0;
   overflow: hidden;
@@ -36,7 +27,6 @@ body {
 }
 
 header {
-  /* width: $width; */
   margin: 0 auto;
   margin-bottom: 25px;
   nav {
@@ -88,7 +78,6 @@ header {
       top: 0;
     }
     .card {
-      /* width: $width; */
       margin: 0 auto;
       border: none;
       background-color: unset;
@@ -96,7 +85,6 @@ header {
         display: flex;
         align-items: center;
         .card-body {
-          /* max-width: 500px; */
           h5.card-title {
             max-width: 461px;
             font-size: 3.13rem;
@@ -130,7 +118,7 @@ header {
         overflow: hidden;
         .hero-watch-img {
           position: relative;
-          background-image: url("/Oander-FE/img/images/hero_watch.png");
+          background-image: url("/Oander-FE/assets/images/hero_watch.png");
           z-index: 1;
           height: 567px;
           width: 459px;
@@ -154,14 +142,11 @@ header {
     position: relative;
     .row.wrap {
       height: 100%;
-      /*  align-items: center; */
-      /* align-items: flex-end; */
       margin: 0 auto;
       .feature {
         display: flex;
         flex-direction: column;
         align-items: center;
-        /*  border-right: 1px solid rgba($link-color, 0.2); */
         padding: 45px 0 37px;
         .feature_icon {
           flex: 1;
@@ -171,10 +156,6 @@ header {
           font-weight: 600;
           font-size: 1.13rem;
           line-height: 1.38rem;
-        }
-        &:first-child {
-          /*  border-right: 1px solid rgba($link-color, 0.2);
-          border-bottom: 1px solid rgba($link-color, 0.2); */
         }
         &:last-child {
           border-right: none;
@@ -187,8 +168,6 @@ header {
     border-bottom: 1px solid rgba($nav-color, 0.15);
     background-color: #fff;
     .card-group {
-      /* width: $width; */
-
       margin: 0 auto;
       .card {
         border: 1px solid rgba($main-color, 0.1);
@@ -239,7 +218,6 @@ footer {
   font-family: $fontFamily;
   background-color: #fff;
   .wrap {
-    /* width: $width; */
     margin: 0 auto;
     margin-bottom: 40px;
     h4 {
@@ -301,6 +279,11 @@ footer {
             font-size: 1rem;
             line-height: 1.75rem;
           }
+          .error-message {
+            display: none;
+            margin: 15px 0;
+            color: $error-color;
+          }
         }
       }
     }
@@ -318,4 +301,4 @@ footer {
     }
   }
 }
-@import "breakpoints";
+/* @import "breakpoints.scss"; */

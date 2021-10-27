@@ -11,7 +11,7 @@ $("#subscribe_btn").on("click", (e) => {
 });
 
 const getCards = () => {
-  $.when($.getJSON("scripts/data.json"), $.ready).done(function (data) {
+  $.when($.getJSON("data/data.json"), $.ready).done(function (data) {
     data[0].forEach((card, index) => {
       const cardTemplate = `<div class="col-sm-12 card p-0">
             <img src="${card.image}" class="card-img-top" alt="watch ${index}">
