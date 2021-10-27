@@ -21,7 +21,7 @@ const getCards = () => {
                 </div>
                 <div class="card-footer">
                     <a class="nav-link" href="#">Read more <object type="image/svg+xml"
-                            data="img/icons/arrow.svg" class="arrow_icon"></object></a>
+                            data="assets/icons/arrow.svg" class="arrow_icon"></object></a>
                 </div>
             </div>
         </div>`;
