@@ -1,54 +1,209 @@
-/* // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
-
-// XX-Large devices (larger desktops, 1400px and up)
+@import "colors";
 
 @mixin widthChanger($width) {
   .breakpoint-changer {
     width: $width;
   }
+}
 
-  /*   header {
-    width: $width;
+@media (max-width: 575.98px) {
+  @include widthChanger(100%);
+  .dark-hero-bg {
+    width: 50px;
+    height: 500px;
   }
-  
+  header {
+    nav {
+      .navbar-brand {
+        margin: 15px 20px;
+        height: 26px;
+        object {
+          height: 26px;
+        }
+      }
+    }
+  }
+  .content {
+    .hero {
+      .card {
+        .hero-text {
+          .card-body {
+            min-height: 220px;
+            h5.card-title {
+              font-size: 1.75rem;
+              line-height: 2.38rem;
+            }
+          }
+          .card-text {
+            display: none;
+          }
+          .card-btn {
+            width: 150px;
+            height: 54px;
+            font-size: 1.13rem;
+            line-height: 2.75rem;
+          }
+        }
+        .hero-watch-holder {
+          position: absolute;
+          top: 0;
+          right: 0;
+          z-index: 0;
+          .hero-watch-img {
+            background-image: url("/Oander-FE/img/images/hero_watch_m.png");
+            z-index: 1;
+            height: 242px;
+            width: 152px;
+            top: -20px;
+            float: right;
+          }
+          .hero-watch-white-bg {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .features {
+      .row.wrap {
+        .feature {
+          border: none;
+        }
+      }
+    }
+    .blogs {
+      .card-group {
+        flex-direction: column;
+        padding: 0 20px;
+        .card {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
+footer {
+  h4,
+  .link-collections {
+    text-align: center;
+  }
+}
+
+@media (min-width: 576px) {
+  @include widthChanger(100%);
+  .dark-hero-bg {
+    width: calc(50% - 150px);
+  }
 
   .content {
-    .hero .card {
-      width: $width;
+    .hero {
+      .card {
+        .hero-text {
+          .card-body {
+            h5.card-title {
+              font-size: 2.75rem;
+              line-height: 3.38rem;
+            }
+            .card-text {
+              font-size: 0.9rem;
+              line-height: 1.5rem;
+            }
+          }
+        }
+        .hero-watch-white-bg {
+          display: none;
+        }
+      }
     }
-    .feautres .row.warp {
-      width: $width;
+
+    .features {
+      .row.wrap {
+        .feature {
+          /*    border: none; */
+          &:first-child {
+            border-right: 1px solid rgba($link-color, 0.2);
+            border-bottom: 1px solid rgba($link-color, 0.2);
+          }
+          &:nth-child(2) {
+            border-bottom: 1px solid rgba($link-color, 0.2);
+          }
+          &:nth-child(3) {
+            border-right: 1px solid rgba($link-color, 0.2);
+          }
+        }
+      }
     }
-    .blogs .card-group {
-      width: $width;
+    .blogs {
+      .card-group {
+        flex-direction: column;
+        padding: 0 20px;
+        .card {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
-  .footer .warp {
-    width: $width;
-  } */
 }
-@media (min-width: 576px) {
-  @include widthChanger(556px);
+footer {
+  h4,
+  .link-collections {
+    text-align: center;
+  }
 }
+
 @media (min-width: 768px) {
   @include widthChanger(748px);
+  .dark-hero-bg {
+    width: calc(50% - 150px);
+  }
+  .hero-watch-white-bg {
+    right: calc(50% - 347px);
+    display: block;
+  }
+  .content {
+    .features {
+      .feature {
+        border-right: 1px solid rgba($link-color, 0.2);
+      }
+    }
+    .blogs {
+      .card-group {
+        flex-direction: row;
+      }
+    }
+  }
+
+  footer {
+    h4,
+    .link-collections {
+      text-align: left;
+    }
+  }
 }
 @media (min-width: 992px) {
   @include widthChanger(972px);
+  .dark-hero-bg {
+    width: calc(50% - 130px);
+  }
+  .hero-watch-white-bg {
+    right: calc(50% - 327px);
+  }
 }
 @media (min-width: 1200px) {
   @include widthChanger(1180px);
+  .dark-hero-bg {
+    width: calc(50% - 110px);
+  }
+  .hero-watch-white-bg {
+    right: calc(50% - 307px);
+  }
 }
 @media (min-width: 1400px) {
   @include widthChanger(1380px);
+  .dark-hero-bg {
+    width: calc(50% - 95px);
+  }
+  .hero-watch-white-bg {
+    right: calc(50% - 292px);
+  }
 }

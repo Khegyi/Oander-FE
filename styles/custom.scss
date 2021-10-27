@@ -1,47 +1,36 @@
 @import "colors";
-@import "breakpoints";
-
-/* @include media-breakpoint-down(sm) { ... }
-@include media-breakpoint-down(md) { ... }
-@include media-breakpoint-down(lg) { ... } */
-
-/* @include media-breakpoint-down(xxl) {
-  $width: 1280px;
-} */
-
-/* $width: 1380px;
-@media (min-width: 1200px) {
-  $width: 1280px;
-}
-@media (min-width: 1400px) {
-  $width: 1280px;
-} */
 
 $fontFamily: "Montserrat";
-/* #nos {
-  width: 1380px;
-} */
+
+html {
+  font-size: 16px;
+}
+
+.error-message {
+  display: none;
+  margin: 15px 0;
+  color: $error-color;
+}
+
 body {
   background-color: $bg-color !important;
 }
-
 .dark-hero-bg {
   background-color: $dark-hero-bg-color;
-  display: block;
+  /*   display: block; */
   position: absolute;
-  width: calc(50% - 95px);
+  /*   width: calc(50% - 95px); */
   height: 700px;
   right: 0;
   overflow: hidden;
   .dark-hero-text {
-    opacity: 1;
+    opacity: 0.2;
     font-weight: 900;
-    font-size: 220px;
+    font-size: 13.75rem;
+    line-height: 11.25rem;
     color: $maintext-color;
-    letter-spacing: 0;
-    line-height: 180px;
     text-align: left;
-    margin-top: 180px;
+    margin-top: 200px;
     margin-left: 65px;
   }
 }
@@ -53,7 +42,8 @@ header {
   nav {
     background-color: #fff;
     .navbar-brand {
-      margin-left: 40px;
+      margin: 23px 40px;
+      height: 36px;
       object {
         height: 36px;
       }
@@ -63,12 +53,22 @@ header {
       ul.navbar-nav {
         li.nav-item .nav-link {
           color: $nav-color;
-          font-size: 18px;
           font-weight: 700;
           font-family: $fontFamily;
-          line-height: 22px;
+          font-size: 1.13rem;
+          line-height: 1.38rem;
           padding: 30px 20px;
+          &:hover {
+            color: $link-color;
+          }
         }
+      }
+    }
+    button.navbar-toggler {
+      margin-right: 20px;
+      padding: 0;
+      &:focus {
+        box-shadow: 0 0 0 0.1rem;
       }
     }
   }
@@ -76,7 +76,6 @@ header {
 
 .content {
   font-family: $fontFamily;
-  /* background-color: $bg-color; */
 
   .hero {
     margin-bottom: 25px;
@@ -97,14 +96,13 @@ header {
         display: flex;
         align-items: center;
         .card-body {
-          max-width: 500px;
+          /* max-width: 500px; */
           h5.card-title {
             max-width: 461px;
-            font-size: 50px;
+            font-size: 3.13rem;
+            line-height: 3.88rem;
             color: $maintext-color;
             font-weight: 700;
-            letter-spacing: 0;
-            line-height: 62px;
             margin-bottom: 30px;
             .goldplating {
               color: $link-color;
@@ -112,25 +110,40 @@ header {
           }
           .card-text {
             max-width: 440px;
-            font-size: 16px;
+            font-size: 1rem;
+            line-height: 1.75rem;
             color: $subtext-color;
-            letter-spacing: 0;
-            line-height: 28px;
             margin-bottom: 40px;
           }
         }
       }
-      /*       img {
-        width: 567px;
-      } */
       .card-btn {
         border-radius: 0;
         border: 0;
         background-color: #000;
         width: 220px;
-        line-height: 28px;
-        font-weight: 600;
-        font-size: 18px;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.75rem;
+      }
+      .hero-watch-holder {
+        overflow: hidden;
+        .hero-watch-img {
+          position: relative;
+          background-image: url("/Oander-FE/img/images/hero_watch.png");
+          z-index: 1;
+          height: 567px;
+          width: 459px;
+        }
+        .hero-watch-white-bg {
+          width: 197px;
+
+          height: 504px;
+          background-color: rgba(#fff, 0.1);
+          position: absolute;
+          z-index: 0;
+          top: 35px;
+        }
       }
     }
   }
@@ -138,28 +151,34 @@ header {
     background-color: $main-color;
     color: white;
     min-height: 177px;
-
+    position: relative;
     .row.wrap {
       height: 100%;
-      align-items: center;
-
-      align-items: flex-end;
+      /*  align-items: center; */
+      /* align-items: flex-end; */
       margin: 0 auto;
       .feature {
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-right: 1px solid rgba($link-color, 0.2);
+        /*  border-right: 1px solid rgba($link-color, 0.2); */
         padding: 45px 0 37px;
+        .feature_icon {
+          flex: 1;
+        }
         label {
           margin-top: 20px;
-          line-height: 22px;
           font-weight: 600;
-          font-size: 18px;
+          font-size: 1.13rem;
+          line-height: 1.38rem;
         }
-      }
-      :last-child {
-        border-right: none;
+        &:first-child {
+          /*  border-right: 1px solid rgba($link-color, 0.2);
+          border-bottom: 1px solid rgba($link-color, 0.2); */
+        }
+        &:last-child {
+          border-right: none;
+        }
       }
     }
   }
@@ -169,6 +188,7 @@ header {
     background-color: #fff;
     .card-group {
       /* width: $width; */
+
       margin: 0 auto;
       .card {
         border: 1px solid rgba($main-color, 0.1);
@@ -183,9 +203,9 @@ header {
             padding: 20px 20px 0 20px;
             .card-title {
               color: $subtext-color;
-              line-height: 28px;
               font-weight: 600;
-              font-size: 18px;
+              font-size: 1.13rem;
+              line-height: 1.75rem;
             }
           }
           .card-footer {
@@ -194,9 +214,9 @@ header {
             padding: 30px 20px;
             a.nav-link {
               color: $link-color;
-              line-height: 19px;
               font-weight: 500;
-              font-size: 16px;
+              font-size: 1rem;
+              line-height: 1.19rem;
               display: flex;
               align-items: center;
               padding: 0;
@@ -215,51 +235,61 @@ header {
 }
 
 footer {
-  margin-top: 39px;
+  padding-top: 40px;
   font-family: $fontFamily;
+  background-color: #fff;
   .wrap {
     /* width: $width; */
     margin: 0 auto;
     margin-bottom: 40px;
     h4 {
       color: $maintext-color;
-      line-height: 18px;
       font-weight: 600;
-      font-size: 14px;
-      margin-bottom: 20px;
+      font-size: 0.88rem;
+      line-height: 1.13rem;
+      margin-bottom: 11px;
     }
     .link-collections {
-      ul.nav {
-        li.nav-item {
-          a.nav-link {
-            color: $muted-text-color;
-            line-height: 30px;
-            font-weight: 300;
-            font-size: 14px;
-            padding: 0;
+      .link-collection {
+        margin-bottom: 20px;
+        ul.nav {
+          li.nav-item {
+            a.nav-link {
+              color: $muted-text-color;
+              font-weight: 300;
+              font-size: 0.88rem;
+              line-height: 1.88rem;
+              padding: 0;
+              &:hover {
+                color: $link-color;
+              }
+            }
           }
         }
       }
     }
     .subscribtion {
       .subscribe-form {
+        h4 {
+          margin-bottom: 20px;
+        }
         form {
           input {
             width: 100%;
             &[type="text"],
             &[type="email"] {
               border: 1px solid $input-border-color;
-              line-height: 18px;
               font-weight: 300;
-              font-size: 14px;
+              font-size: 0.88rem;
+              line-height: 1.13rem;
               padding: 12px 16px;
               margin-bottom: 20px;
             }
             &::placeholder {
               color: $input-placeholder-color;
-              line-height: 18px;
               font-weight: 300;
-              font-size: 14px;
+              font-size: 0.88rem;
+              line-height: 1.13rem;
             }
           }
 
@@ -267,9 +297,9 @@ footer {
             border-radius: 0;
             border: 0;
             background-color: #000;
-            line-height: 28px;
             font-weight: 500;
-            font-size: 18px;
+            font-size: 1rem;
+            line-height: 1.75rem;
           }
         }
       }
@@ -288,3 +318,4 @@ footer {
     }
   }
 }
+@import "breakpoints";

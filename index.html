@@ -23,14 +23,17 @@
 
         <nav class="navbar navbar-expand-lg p-0 ">
             <div class="container-fluid p-0">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand p-0" href="#">
                     <object type="image/svg+xml" data="img/logos/logo.svg" class="logo">
-                        Main Logo
                     </object>
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                            fill="#3A3A3A" class="bi bi-list" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                        </svg></i></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
@@ -62,7 +65,7 @@
             <img class="pattern" src="img/images/background_pattern.png" alt="">
             <div class="card breakpoint-changer">
                 <div class="row g-0">
-                    <div class="col-md-5 hero-text">
+                    <div class="col-sm-5 col-9 hero-text">
                         <div class="card-body">
                             <h5 class="card-title">The message is a simple. <span class="goldplating">That's It.</span>
                             </h5>
@@ -74,38 +77,35 @@
                             <a href="#" class="btn btn-primary card-btn">Buy now</a>
                         </div>
                     </div>
-                    <div class="col-md-7">
-                        <img src="img/images/hero_watch.png" class="img-fluid rounded-start" alt="hero watch">
+                    <div class="col-sm-7 col-6 hero-watch-holder">
+                        <div src="img/images/hero_watch.png" class="hero-watch-img" alt="hero watch">
+                            <div class="hero-watch-white-bg"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
-        <section class="features flex container-fluid">
-            <div id="nos" class="row wrap breakpoint-changer">
-                <div class="col-sm-6 col-md-3  feature">
+        <section class="features">
+            <div class="row wrap breakpoint-changer">
+                <div class="col-6 col-md-3 feature">
                     <object id="leather_strap" type="image/svg+xml" data="img/icons/leather_icon.svg"
                         class="feature_icon">
-                        Leather Strap
                     </object>
                     <label for="leather_strap">Leather Strap</label>
                 </div>
-                <div class="col-sm-6 col-md-3 feature">
+                <div class="col-6 col-md-3 feature">
                     <object id="water_resistant" type="image/svg+xml" data="img/icons/water_resistant.svg"
                         class="feature_icon">
-                        Water resistant
                     </object>
                     <label for="water_resistant">Water resistant</label>
                 </div>
-                <div class="col-sm-6 col-md-3 feature">
+                <div class="col-6 col-md-3 feature">
                     <object id="spring_drive" type="image/svg+xml" data="img/icons/spring_drive_icon.svg"
                         class="feature_icon">
-                        Spring Drive
                     </object>
                     <label for="spring_drive"> Spring Drive</label>
                 </div>
-                <div class="col-sm-6 col-md-3 feature">
+                <div class="col-6 col-md-3 feature">
                     <object id="warranty" type="image/svg+xml" data="img/icons/warranty_icon.svg" class="feature_icon">
-                        Warranty
                     </object>
                     <label for="warranty">Warranty</label>
                 </div>
@@ -114,15 +114,13 @@
         <section class="blogs">
 
 
-            <div id="nos" class="grid card-group breakpoint-changer">
-                <div class="col-sm-12 card">
+            <div class="row card-group breakpoint-changer">
+                <!--                 <div class="col-sm-12 card p-0">
                     <img src="img/images/blog_img_01.png" class="card-img-top" alt="watch 1">
                     <div class="card-content">
                         <div class="card-body">
                             <h5 class="card-title">Going Upstream: The Montblanc 1858 Chronograph Tachymeter Limited
                             </h5>
-
-
                         </div>
                         <div class="card-footer">
                             <a class="nav-link" href="#">Read more <object type="image/svg+xml"
@@ -130,13 +128,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 card">
+                <div class="col-sm-12 card p-0">
                     <img src="img/images/blog_img_02.png" class="card-img-top" alt="watch 2">
                     <div class="card-content">
                         <div class="card-body">
                             <h5 class="card-title">Baume & Mercier Clifton Club Burt Munro Tribute Honors</h5>
-
-
                         </div>
                         <div class="card-footer">
                             <a class="nav-link" href="#">Read more <object type="image/svg+xml"
@@ -144,7 +140,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 card">
+                <div class="col-sm-12 card p-0">
                     <img src="img/images/blog_img_03.png" class="card-img-top" alt="watch 3">
                     <div class="card-content">
                         <div class="card-body">
@@ -156,16 +152,16 @@
                                     data="img/icons/arrow.svg" class="arrow_icon">Right Arrow</object></a>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
     </div>
     <footer>
 
-        <div id="nos" class="row wrap breakpoint-changer">
+        <div class="row wrap breakpoint-changer">
             <div class="col-md-9 col-sm-12 link-collections">
                 <div class="row">
-                    <div class="col-sm-12 col-md-4  about">
+                    <div class="col-sm-12 col-md-4 link-collection about">
                         <h4>About</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -192,7 +188,7 @@
                     </div>
 
 
-                    <div class="col-sm-12 col-md-4  information">
+                    <div class="col-sm-12 col-md-4 link-collection information">
                         <h4>Information</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -215,7 +211,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-sm-12 col-md-4 follow-me">
+                    <div class="col-sm-12 col-md-4 link-collection follow-me">
                         <h4>Follow me!</h4>
                         <ul class="nav flex-column">
                             <li class="nav-item">
@@ -240,23 +236,27 @@
                     <form>
                         <div class="row">
                             <div class="col-sm-12 col-xxl-6 ">
-                                <input type="text" placeholder="First name" />
+                                <input type="text" id="first_name" placeholder="First name" />
                             </div>
                             <div class="col-sm-12 col-xxl-6">
-                                <input type="text" placeholder="Last name" />
+                                <input type="text" id="last_name" placeholder="Last name" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input type="email" placeholder="Email" />
+                                <input type="email" id="email" placeholder="Email" />
                             </div>
                         </div>
                         <div class="row">
                             <div class="col">
-                                <input class="btn btn-primary" type="submit" value="Subscribe" />
+                                <input class="btn btn-primary" id="subscribe_btn" type="submit" value="Subscribe" />
                             </div>
                         </div>
-
+                        <div class="row">
+                            <div class="col">
+                                <p class="error-message"></p>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -264,11 +264,14 @@
         <div class="row mx-0 lifter">
             <div class="col">
                 <a class="nav-link" href="#"> <object type="image/svg+xml" width="25px"
-                        data="img/icons/right_chevron_icon.svg" class="arrow_icon">Scroll to Top</object></a>
+                        data="img/icons/right_chevron_icon.svg" class="arrow_icon"></object></a>
             </div>
         </div>
     </footer>
 </body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="./scripts/scripts.js"></script>
+
 
 </html>

@@ -1,136 +1,178 @@
-/* // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
+@media (max-width: 575.98px) {
+  .breakpoint-changer {
+    width: 100%;
+  }
+  .dark-hero-bg {
+    width: 50px;
+    height: 500px;
+  }
+  header nav .navbar-brand {
+    margin: 15px 20px;
+    height: 26px;
+  }
+  header nav .navbar-brand object {
+    height: 26px;
+  }
+  .content .hero .card .hero-text .card-body {
+    min-height: 220px;
+  }
+  .content .hero .card .hero-text .card-body h5.card-title {
+    font-size: 1.75rem;
+    line-height: 2.38rem;
+  }
+  .content .hero .card .hero-text .card-text {
+    display: none;
+  }
+  .content .hero .card .hero-text .card-btn {
+    width: 150px;
+    height: 54px;
+    font-size: 1.13rem;
+    line-height: 2.75rem;
+  }
+  .content .hero .card .hero-watch-holder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+  }
+  .content .hero .card .hero-watch-holder .hero-watch-img {
+    background-image: url("/Oander-FE/img/images/hero_watch_m.png");
+    z-index: 1;
+    height: 242px;
+    width: 152px;
+    top: -20px;
+    float: right;
+  }
+  .content .hero .card .hero-watch-holder .hero-watch-white-bg {
+    display: none;
+  }
+  .content .features .row.wrap .feature {
+    border: none;
+  }
+  .content .blogs .card-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+  }
+  .content .blogs .card-group .card {
+    margin-bottom: 20px;
+  }
+}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... }
+footer h4,
+footer .link-collections {
+  text-align: center;
+}
 
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { ... }
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { ... } */
 @media (min-width: 576px) {
   .breakpoint-changer {
-    width: 556px;
+    width: 100%;
   }
-  /*   header {
-    width: $width;
+  .dark-hero-bg {
+    width: calc(50% - 150px);
   }
-  
+  .content .hero .card .hero-text .card-body h5.card-title {
+    font-size: 2.75rem;
+    line-height: 3.38rem;
+  }
+  .content .hero .card .hero-text .card-body .card-text {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .content .hero .card .hero-watch-white-bg {
+    display: none;
+  }
+  .content .features .row.wrap .feature {
+    /*    border: none; */
+  }
+  .content .features .row.wrap .feature:first-child {
+    border-right: 1px solid rgba(196, 163, 123, 0.2);
+    border-bottom: 1px solid rgba(196, 163, 123, 0.2);
+  }
+  .content .features .row.wrap .feature:nth-child(2) {
+    border-bottom: 1px solid rgba(196, 163, 123, 0.2);
+  }
+  .content .features .row.wrap .feature:nth-child(3) {
+    border-right: 1px solid rgba(196, 163, 123, 0.2);
+  }
+  .content .blogs .card-group {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 20px;
+  }
+  .content .blogs .card-group .card {
+    margin-bottom: 20px;
+  }
+}
 
-  .content {
-    .hero .card {
-      width: $width;
-    }
-    .feautres .row.warp {
-      width: $width;
-    }
-    .blogs .card-group {
-      width: $width;
-    }
-  }
-  .footer .warp {
-    width: $width;
-  } */
+footer h4,
+footer .link-collections {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .breakpoint-changer {
     width: 748px;
   }
-  /*   header {
-    width: $width;
+  .dark-hero-bg {
+    width: calc(50% - 150px);
   }
-  
-
-  .content {
-    .hero .card {
-      width: $width;
-    }
-    .feautres .row.warp {
-      width: $width;
-    }
-    .blogs .card-group {
-      width: $width;
-    }
+  .hero-watch-white-bg {
+    right: calc(50% - 347px);
+    display: block;
   }
-  .footer .warp {
-    width: $width;
-  } */
+  .content .features .feature {
+    border-right: 1px solid rgba(196, 163, 123, 0.2);
+  }
+  .content .blogs .card-group {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  footer h4,
+  footer .link-collections {
+    text-align: left;
+  }
 }
 
 @media (min-width: 992px) {
   .breakpoint-changer {
     width: 972px;
   }
-  /*   header {
-    width: $width;
+  .dark-hero-bg {
+    width: calc(50% - 130px);
   }
-  
-
-  .content {
-    .hero .card {
-      width: $width;
-    }
-    .feautres .row.warp {
-      width: $width;
-    }
-    .blogs .card-group {
-      width: $width;
-    }
+  .hero-watch-white-bg {
+    right: calc(50% - 327px);
   }
-  .footer .warp {
-    width: $width;
-  } */
 }
 
 @media (min-width: 1200px) {
   .breakpoint-changer {
     width: 1180px;
   }
-  /*   header {
-    width: $width;
+  .dark-hero-bg {
+    width: calc(50% - 110px);
   }
-  
-
-  .content {
-    .hero .card {
-      width: $width;
-    }
-    .feautres .row.warp {
-      width: $width;
-    }
-    .blogs .card-group {
-      width: $width;
-    }
+  .hero-watch-white-bg {
+    right: calc(50% - 307px);
   }
-  .footer .warp {
-    width: $width;
-  } */
 }
 
 @media (min-width: 1400px) {
   .breakpoint-changer {
     width: 1380px;
   }
-  /*   header {
-    width: $width;
+  .dark-hero-bg {
+    width: calc(50% - 95px);
   }
-  
-
-  .content {
-    .hero .card {
-      width: $width;
-    }
-    .feautres .row.warp {
-      width: $width;
-    }
-    .blogs .card-group {
-      width: $width;
-    }
+  .hero-watch-white-bg {
+    right: calc(50% - 292px);
   }
-  .footer .warp {
-    width: $width;
-  } */
 }
 /*# sourceMappingURL=breakpoints.css.map */
