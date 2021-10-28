@@ -1,4 +1,23 @@
-/* @import "colors.scss"; */
+@font-face {
+  font-family: MontserratBlack;
+  src: url("/Oander-FE/assets/fonts/Montserrat-Black.ttf"); }
+
+@font-face {
+  font-family: MontserratSemiBold;
+  src: url("/Oander-FE/assets/fonts/Montserrat-SemiBold.ttf"); }
+
+@font-face {
+  font-family: MontserratBold;
+  src: url("/Oander-FE/assets/fonts/Montserrat-Bold.ttf"); }
+
+@font-face {
+  font-family: MontserratMedium;
+  src: url("/Oander-FE/assets/fonts/Montserrat-Medium.ttf"); }
+
+@font-face {
+  font-family: Montserrat;
+  src: url("/Oander-FE/assets/fonts/Montserrat-Regular.ttf"); }
+
 html {
   font-size: 16px; }
 
@@ -13,7 +32,7 @@ body {
   overflow: hidden; }
   .dark-hero-bg .dark-hero-text {
     opacity: 0.2;
-    font-weight: 900;
+    font-family: "MontserratBlack";
     font-size: 13.75rem;
     line-height: 11.25rem;
     color: #3a3a3a;
@@ -35,8 +54,7 @@ header {
       justify-content: flex-end; }
       header nav #navbarNav ul.navbar-nav li.nav-item .nav-link {
         color: #2e2e2e;
-        font-weight: 700;
-        font-family: "Montserrat";
+        font-family: "MontserratBold";
         font-size: 1.13rem;
         line-height: 1.38rem;
         padding: 30px 20px; }
@@ -49,7 +67,8 @@ header {
         box-shadow: 0 0 0 0.1rem; }
 
 .content {
-  font-family: "Montserrat"; }
+  /* font-family: $fontFamily;
+ */ }
   .content .hero {
     margin-bottom: 25px; }
     .content .hero img.pattern {
@@ -71,7 +90,7 @@ header {
           font-size: 3.13rem;
           line-height: 3.88rem;
           color: #3a3a3a;
-          font-weight: 700;
+          font-family: "MontserratBold";
           margin-bottom: 30px; }
           .content .hero .card .hero-text .card-body h5.card-title .goldplating {
             color: #c4a37b; }
@@ -80,13 +99,16 @@ header {
           font-size: 1rem;
           line-height: 1.75rem;
           color: #5a5a5a;
+          font-family: "Montserrat";
           margin-bottom: 40px; }
+          .content .hero .card .hero-text .card-body .card-text strong {
+            font-family: "MontserratBold"; }
       .content .hero .card .card-btn {
         border-radius: 0;
         border: 0;
         background-color: #000;
         width: 220px;
-        font-weight: 500;
+        font-family: "MontserratSemiBold";
         font-size: 1rem;
         line-height: 1.75rem; }
       .content .hero .card .hero-watch-holder {
@@ -121,7 +143,7 @@ header {
           flex: 1; }
         .content .features .row.wrap .feature label {
           margin-top: 20px;
-          font-weight: 600;
+          font-family: "MontserratSemiBold";
           font-size: 1.13rem;
           line-height: 1.38rem; }
         .content .features .row.wrap .feature:last-child {
@@ -144,7 +166,7 @@ header {
             padding: 20px 20px 0 20px; }
             .content .blogs .card-group .card .card-content .card-body .card-title {
               color: #5a5a5a;
-              font-weight: 600;
+              font-family: "MontserratBold";
               font-size: 1.13rem;
               line-height: 1.75rem; }
           .content .blogs .card-group .card .card-content .card-footer {
@@ -153,7 +175,7 @@ header {
             padding: 30px 20px; }
             .content .blogs .card-group .card .card-content .card-footer a.nav-link {
               color: #c4a37b;
-              font-weight: 500;
+              font-family: "MontserratMedium";
               font-size: 1rem;
               line-height: 1.19rem;
               display: flex;
@@ -166,14 +188,13 @@ header {
 
 footer {
   padding-top: 40px;
-  font-family: "Montserrat";
   background-color: #fff; }
   footer .wrap {
     margin: 0 auto;
     margin-bottom: 40px; }
     footer .wrap h4 {
       color: #3a3a3a;
-      font-weight: 600;
+      font-family: "MontserratBold";
       font-size: 0.88rem;
       line-height: 1.13rem;
       margin-bottom: 11px; }
@@ -181,7 +202,7 @@ footer {
       margin-bottom: 20px; }
       footer .wrap .link-collections .link-collection ul.nav li.nav-item a.nav-link {
         color: #ababab;
-        font-weight: 300;
+        font-family: "Montserrat";
         font-size: 0.88rem;
         line-height: 1.88rem;
         padding: 0; }
@@ -193,14 +214,14 @@ footer {
       width: 100%; }
       footer .wrap .subscribtion .subscribe-form form input[type="text"], footer .wrap .subscribtion .subscribe-form form input[type="email"] {
         border: 1px solid #dbdbdb;
-        font-weight: 300;
+        font-family: "Montserrat";
         font-size: 0.88rem;
         line-height: 1.13rem;
         padding: 12px 16px;
         margin-bottom: 20px; }
       footer .wrap .subscribtion .subscribe-form form input::placeholder {
         color: #aeaeae;
-        font-weight: 300;
+        font-family: "Montserrat";
         font-size: 0.88rem;
         line-height: 1.13rem; }
     footer .wrap .subscribtion .subscribe-form form .btn {
@@ -213,6 +234,7 @@ footer {
     footer .wrap .subscribtion .subscribe-form form .error-message {
       display: none;
       margin: 15px 0;
+      font-family: "MontserratSemiBold";
       color: #ff0000d5; }
   footer .lifter {
     border-top: 1px solid rgba(46, 46, 46, 0.15);
@@ -224,7 +246,6 @@ footer {
       footer .lifter .nav-link object {
         transform: rotate(-90deg); }
 
-/* @import "breakpoints.scss"; */
 /* @import "colors.scss"; */
 @media (max-width: 575.98px) {
   .breakpoint-changer {
