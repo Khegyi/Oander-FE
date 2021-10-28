@@ -66,125 +66,124 @@ header {
       header nav button.navbar-toggler:focus {
         box-shadow: 0 0 0 0.1rem; }
 
-.content {
-  /* font-family: $fontFamily;
- */ }
-  .content .hero {
-    margin-bottom: 25px; }
-    .content .hero img.pattern {
-      width: 100%;
-      position: absolute;
-      z-index: -1;
-      object-fit: cover;
-      height: 700px;
-      top: 0; }
-    .content .hero .card {
-      margin: 0 auto;
-      border: none;
-      background-color: unset; }
-      .content .hero .card .hero-text {
-        display: flex;
-        align-items: center; }
-        .content .hero .card .hero-text .card-body h5.card-title {
-          max-width: 461px;
-          font-size: 3.13rem;
-          line-height: 3.88rem;
-          color: #3a3a3a;
-          font-family: "MontserratBold";
-          margin-bottom: 30px; }
-          .content .hero .card .hero-text .card-body h5.card-title .goldplating {
-            color: #c4a37b; }
-        .content .hero .card .hero-text .card-body .card-text {
-          max-width: 440px;
-          font-size: 1rem;
-          line-height: 1.75rem;
-          color: #5a5a5a;
-          font-family: "Montserrat";
-          margin-bottom: 40px; }
-          .content .hero .card .hero-text .card-body .card-text strong {
-            font-family: "MontserratBold"; }
-      .content .hero .card .card-btn {
-        border-radius: 0;
-        border: 0;
-        background-color: #000;
-        width: 220px;
-        font-family: "MontserratSemiBold";
+.content .hero {
+  margin-bottom: 25px; }
+  .content .hero img.pattern {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    height: 700px;
+    top: 0; }
+  .content .hero .card {
+    margin: 0 auto;
+    border: none;
+    background-color: unset; }
+    .content .hero .card .hero-text {
+      display: flex;
+      align-items: center; }
+      .content .hero .card .hero-text .card-body h5.card-title {
+        max-width: 461px;
+        font-size: 3.13rem;
+        line-height: 3.88rem;
+        color: #3a3a3a;
+        font-family: "MontserratBold";
+        margin-bottom: 30px; }
+        .content .hero .card .hero-text .card-body h5.card-title .goldplating {
+          color: #c4a37b; }
+      .content .hero .card .hero-text .card-body .card-text {
+        max-width: 440px;
         font-size: 1rem;
-        line-height: 1.75rem; }
-      .content .hero .card .hero-watch-holder {
-        overflow: hidden; }
-        .content .hero .card .hero-watch-holder .hero-watch-img {
-          position: relative;
-          background-image: url("/Oander-FE/assets/images/hero_watch.png");
-          z-index: 1;
-          height: 567px;
-          width: 459px; }
-        .content .hero .card .hero-watch-holder .hero-watch-white-bg {
-          width: 197px;
-          height: 504px;
-          background-color: rgba(255, 255, 255, 0.1);
-          position: absolute;
-          z-index: 0;
-          top: 35px; }
-  .content .features {
-    background-color: #292929;
-    color: white;
-    min-height: 177px;
-    position: relative; }
-    .content .features .row.wrap {
-      height: 100%;
-      margin: 0 auto; }
-      .content .features .row.wrap .feature {
+        line-height: 1.75rem;
+        color: #5a5a5a;
+        font-family: "Montserrat";
+        margin-bottom: 40px; }
+        .content .hero .card .hero-text .card-body .card-text strong {
+          font-family: "MontserratBold"; }
+    .content .hero .card .card-btn {
+      border-radius: 0;
+      border: 0;
+      background-color: #000;
+      width: 220px;
+      font-family: "MontserratSemiBold";
+      font-size: 1rem;
+      line-height: 1.75rem; }
+    .content .hero .card .hero-watch-holder {
+      overflow: hidden; }
+      .content .hero .card .hero-watch-holder .hero-watch-img {
+        position: relative;
+        background-image: url("/Oander-FE/assets/images/hero_watch.png");
+        z-index: 1;
+        height: 567px;
+        width: 459px; }
+      .content .hero .card .hero-watch-holder .hero-watch-white-bg {
+        width: 197px;
+        height: 504px;
+        background-color: rgba(255, 255, 255, 0.1);
+        position: absolute;
+        z-index: 0;
+        top: 35px; }
+
+.content .features {
+  background-color: #292929;
+  color: white;
+  min-height: 177px;
+  position: relative; }
+  .content .features .row.wrap {
+    height: 100%;
+    margin: 0 auto; }
+    .content .features .row.wrap .feature {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 45px 0 37px; }
+      .content .features .row.wrap .feature .feature_icon {
+        flex: 1; }
+      .content .features .row.wrap .feature label {
+        margin-top: 20px;
+        font-family: "MontserratSemiBold";
+        font-size: 1.13rem;
+        line-height: 1.38rem; }
+      .content .features .row.wrap .feature:last-child {
+        border-right: none; }
+
+.content .blogs {
+  padding: 50px 0 49px 0;
+  border-bottom: 1px solid rgba(46, 46, 46, 0.15);
+  background-color: #fff; }
+  .content .blogs .card-group {
+    margin: 0 auto; }
+    .content .blogs .card-group .card {
+      border: 1px solid rgba(41, 41, 41, 0.1);
+      margin-right: 28px;
+      border-radius: 0; }
+      .content .blogs .card-group .card .card-content {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 45px 0 37px; }
-        .content .features .row.wrap .feature .feature_icon {
-          flex: 1; }
-        .content .features .row.wrap .feature label {
-          margin-top: 20px;
-          font-family: "MontserratSemiBold";
-          font-size: 1.13rem;
-          line-height: 1.38rem; }
-        .content .features .row.wrap .feature:last-child {
-          border-right: none; }
-  .content .blogs {
-    padding: 50px 0 49px 0;
-    border-bottom: 1px solid rgba(46, 46, 46, 0.15);
-    background-color: #fff; }
-    .content .blogs .card-group {
-      margin: 0 auto; }
-      .content .blogs .card-group .card {
-        border: 1px solid rgba(41, 41, 41, 0.1);
-        margin-right: 28px;
-        border-radius: 0; }
-        .content .blogs .card-group .card .card-content {
-          display: flex;
-          height: 100%;
-          flex-direction: column; }
-          .content .blogs .card-group .card .card-content .card-body {
-            padding: 20px 20px 0 20px; }
-            .content .blogs .card-group .card .card-content .card-body .card-title {
-              color: #5a5a5a;
-              font-family: "MontserratBold";
-              font-size: 1.13rem;
-              line-height: 1.75rem; }
-          .content .blogs .card-group .card .card-content .card-footer {
-            background-color: #fff;
-            border: none;
-            padding: 30px 20px; }
-            .content .blogs .card-group .card .card-content .card-footer a.nav-link {
-              color: #c4a37b;
-              font-family: "MontserratMedium";
-              font-size: 1rem;
-              line-height: 1.19rem;
-              display: flex;
-              align-items: center;
-              padding: 0; }
-            .content .blogs .card-group .card .card-content .card-footer object {
-              margin-left: 10px; }
-      .content .blogs .card-group :last-child {
-        margin-right: 0; }
+        height: 100%;
+        flex-direction: column; }
+        .content .blogs .card-group .card .card-content .card-body {
+          padding: 20px 20px 0 20px; }
+          .content .blogs .card-group .card .card-content .card-body .card-title {
+            color: #5a5a5a;
+            font-family: "MontserratBold";
+            font-size: 1.13rem;
+            line-height: 1.75rem; }
+        .content .blogs .card-group .card .card-content .card-footer {
+          background-color: #fff;
+          border: none;
+          padding: 30px 20px; }
+          .content .blogs .card-group .card .card-content .card-footer a.nav-link {
+            color: #c4a37b;
+            font-family: "MontserratMedium";
+            font-size: 1rem;
+            line-height: 1.19rem;
+            display: flex;
+            align-items: center;
+            padding: 0; }
+          .content .blogs .card-group .card .card-content .card-footer object {
+            margin-left: 10px; }
+    .content .blogs .card-group :last-child {
+      margin-right: 0; }
 
 footer {
   padding-top: 40px;
@@ -246,7 +245,6 @@ footer {
       footer .lifter .nav-link object {
         transform: rotate(-90deg); }
 
-/* @import "colors.scss"; */
 @media (max-width: 575.98px) {
   .breakpoint-changer {
     width: 100%; }
@@ -306,12 +304,6 @@ footer .link-collections {
     width: 100%; }
   .dark-hero-bg {
     width: calc(50% - 150px); }
-  .content .hero .card .hero-text .card-body h5.card-title {
-    font-size: 2.75rem;
-    line-height: 3.38rem; }
-  .content .hero .card .hero-text .card-body .card-text {
-    font-size: 0.9rem;
-    line-height: 1.5rem; }
   .content .hero .card .hero-watch-white-bg {
     display: none; }
   .content .features .row.wrap .feature:first-child {
@@ -346,6 +338,14 @@ footer .link-collections {
   footer h4,
   footer .link-collections {
     text-align: left; } }
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .content .hero .card .hero-text .card-body h5.card-title {
+    font-size: 2.75rem;
+    line-height: 3rem; }
+  .content .hero .card .hero-text .card-body .card-text {
+    font-size: 0.9rem;
+    line-height: 1.4rem; } }
 
 @media (min-width: 992px) {
   .breakpoint-changer {
