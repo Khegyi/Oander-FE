@@ -48,7 +48,7 @@ header {
     header nav .navbar-brand {
       margin: 23px 40px;
       height: 36px; }
-      header nav .navbar-brand object {
+      header nav .navbar-brand img.logo {
         height: 36px; }
     header nav #navbarNav {
       justify-content: flex-end; }
@@ -183,7 +183,7 @@ header {
             display: flex;
             align-items: center;
             padding: 0; }
-          .content .blogs .card-group .card .card-content .card-footer object {
+          .content .blogs .card-group .card .card-content .card-footer img.arrow_icon {
             margin-left: 10px; }
       .content .blogs .card-group .card:hover {
         box-shadow: 2px 2px 3px #2929296e; }
@@ -256,7 +256,7 @@ footer {
       height: 100%;
       display: flex;
       justify-content: center; }
-      footer .lifter .nav-link object {
+      footer .lifter .nav-link img.chevron_icon {
         transform: rotate(-90deg); }
 
 @media (max-width: 575.98px) {

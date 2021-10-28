@@ -20,8 +20,9 @@ const getCards = () => {
                     <h5 class="card-title">${card.title}</h5>
                 </div>
                 <div class="card-footer">
-                    <a class="nav-link" href="#">Read more <object type="image/svg+xml"
-                            data="assets/icons/arrow.svg" class="arrow_icon"></object></a>
+                    <a class="nav-link" href="#">Read more 
+                    <img src="assets/icons/arrow.svg" class="arrow_icon" alt="arrow icon">
+                    </a>
                 </div>
             </div>
         </div>`;
