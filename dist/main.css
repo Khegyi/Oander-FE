@@ -1,22 +1,22 @@
 @font-face {
   font-family: MontserratBlack;
-  src: url("/Oander-FE/assets/fonts/Montserrat-Black.ttf"); }
+  src: url("../assets/fonts/Montserrat-Black.ttf"); }
 
 @font-face {
   font-family: MontserratSemiBold;
-  src: url("/Oander-FE/assets/fonts/Montserrat-SemiBold.ttf"); }
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf"); }
 
 @font-face {
   font-family: MontserratBold;
-  src: url("/Oander-FE/assets/fonts/Montserrat-Bold.ttf"); }
+  src: url("../assets/fonts/Montserrat-Bold.ttf"); }
 
 @font-face {
   font-family: MontserratMedium;
-  src: url("/Oander-FE/assets/fonts/Montserrat-Medium.ttf"); }
+  src: url("../assets/fonts/Montserrat-Medium.ttf"); }
 
 @font-face {
   font-family: Montserrat;
-  src: url("/Oander-FE/assets/fonts/Montserrat-Regular.ttf"); }
+  src: url("../assets/fonts/Montserrat-Regular.ttf"); }
 
 html {
   font-size: 16px; }
@@ -114,7 +114,7 @@ header {
       overflow: hidden; }
       .content .hero .card .hero-watch-holder .hero-watch-img {
         position: relative;
-        background-image: url("/Oander-FE/assets/images/hero_watch.png");
+        background-image: url("../assets/images/hero_watch.png");
         z-index: 1;
         height: 567px;
         width: 459px; }
@@ -292,7 +292,7 @@ footer {
     right: 0;
     z-index: 0; }
     .content .hero .card .hero-watch-holder .hero-watch-img {
-      background-image: url("/Oander-FE/assets/images/hero_watch_m.png");
+      background-image: url("../assets/images/hero_watch_m.png");
       z-index: 1;
       height: 242px;
       width: 152px;
