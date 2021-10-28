@@ -208,6 +208,10 @@ header {
             }
           }
         }
+        transition: box-shadow 0.5s;
+        &:hover {
+          box-shadow: 2px 2px 3px #2929296e;
+        }
       }
       :last-child {
         margin-right: 0;
@@ -257,6 +261,14 @@ footer {
         form {
           input {
             width: 100%;
+            transition: box-shadow 0.5s;
+            &:focus {
+              box-shadow: 2px 2px 3px #2929296e;
+            }
+            &:focus-visible {
+              border-radius: 0;
+              outline: 0px solid $main-color;
+            }
             &[type="text"],
             &[type="email"] {
               border: 1px solid $input-border-color;

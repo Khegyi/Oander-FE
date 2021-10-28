@@ -158,7 +158,8 @@ header {
     .content .blogs .card-group .card {
       border: 1px solid rgba(41, 41, 41, 0.1);
       margin-right: 28px;
-      border-radius: 0; }
+      border-radius: 0;
+      transition: box-shadow 0.5s; }
       .content .blogs .card-group .card .card-content {
         display: flex;
         height: 100%;
@@ -184,6 +185,8 @@ header {
             padding: 0; }
           .content .blogs .card-group .card .card-content .card-footer object {
             margin-left: 10px; }
+      .content .blogs .card-group .card:hover {
+        box-shadow: 2px 2px 3px #2929296e; }
     .content .blogs .card-group :last-child {
       margin-right: 0; }
 
@@ -213,7 +216,13 @@ footer {
     footer .wrap .subscribtion .subscribe-form h4 {
       margin-bottom: 20px; }
     footer .wrap .subscribtion .subscribe-form form input {
-      width: 100%; }
+      width: 100%;
+      transition: box-shadow 0.5s; }
+      footer .wrap .subscribtion .subscribe-form form input:focus {
+        box-shadow: 2px 2px 3px #2929296e; }
+      footer .wrap .subscribtion .subscribe-form form input:focus-visible {
+        border-radius: 0;
+        outline: 0px solid #292929; }
       footer .wrap .subscribtion .subscribe-form form input[type="text"], footer .wrap .subscribtion .subscribe-form form input[type="email"] {
         border: 1px solid #dbdbdb;
         font-family: "Montserrat";
