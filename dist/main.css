@@ -315,7 +315,7 @@ footer .link-collections {
     width: 748px; }
   .dark-hero-bg {
     width: calc(50% - 150px); }
-  .hero-watch-white-bg {
+  .content .hero .card .hero-watch-white-bg {
     right: calc(50% - 347px);
     display: block; }
   .content .features .feature {
@@ -331,7 +331,7 @@ footer .link-collections {
     width: 972px; }
   .dark-hero-bg {
     width: calc(50% - 130px); }
-  .hero-watch-white-bg {
+  .content .hero .card .hero-watch-white-bg {
     right: calc(50% - 327px); } }
 
 @media (min-width: 1200px) {
@@ -339,7 +339,7 @@ footer .link-collections {
     width: 1180px; }
   .dark-hero-bg {
     width: calc(50% - 110px); }
-  .hero-watch-white-bg {
+  .content .hero .card .hero-watch-white-bg {
     right: calc(50% - 307px); } }
 
 @media (min-width: 1400px) {
@@ -347,5 +347,5 @@ footer .link-collections {
     width: 1380px; }
   .dark-hero-bg {
     width: calc(50% - 95px); }
-  .hero-watch-white-bg {
+  .content .hero .card .hero-watch-white-bg {
     right: calc(50% - 292px); } }

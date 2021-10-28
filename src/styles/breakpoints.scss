@@ -164,11 +164,16 @@ footer {
   .dark-hero-bg {
     width: calc(50% - 150px);
   }
-  .hero-watch-white-bg {
-    right: calc(50% - 347px);
-    display: block;
-  }
+
   .content {
+    .hero {
+      .card {
+        .hero-watch-white-bg {
+          right: calc(50% - 347px);
+          display: block;
+        }
+      }
+    }
     .features {
       .feature {
         border-right: 1px solid rgba($link-color, 0.2);
@@ -193,8 +198,14 @@ footer {
   .dark-hero-bg {
     width: calc(50% - 130px);
   }
-  .hero-watch-white-bg {
-    right: calc(50% - 327px);
+  .content {
+    .hero {
+      .card {
+        .hero-watch-white-bg {
+          right: calc(50% - 327px);
+        }
+      }
+    }
   }
 }
 @media (min-width: 1200px) {
@@ -202,8 +213,14 @@ footer {
   .dark-hero-bg {
     width: calc(50% - 110px);
   }
-  .hero-watch-white-bg {
-    right: calc(50% - 307px);
+  .content {
+    .hero {
+      .card {
+        .hero-watch-white-bg {
+          right: calc(50% - 307px);
+        }
+      }
+    }
   }
 }
 @media (min-width: 1400px) {
@@ -211,7 +228,13 @@ footer {
   .dark-hero-bg {
     width: calc(50% - 95px);
   }
-  .hero-watch-white-bg {
-    right: calc(50% - 292px);
+  .content {
+    .hero {
+      .card {
+        .hero-watch-white-bg {
+          right: calc(50% - 292px);
+        }
+      }
+    }
   }
 }
