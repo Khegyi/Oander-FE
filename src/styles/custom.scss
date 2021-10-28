@@ -118,6 +118,9 @@ header {
         &:hover {
           background-color: $main-color;
         }
+        &:focus {
+          box-shadow: none;
+        }
       }
       .hero-watch-holder {
         overflow: hidden;

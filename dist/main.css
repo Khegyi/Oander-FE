@@ -110,6 +110,8 @@ header {
       line-height: 1.75rem; }
       .content .hero .card .card-btn:hover {
         background-color: #292929; }
+      .content .hero .card .card-btn:focus {
+        box-shadow: none; }
     .content .hero .card .hero-watch-holder {
       overflow: hidden; }
       .content .hero .card .hero-watch-holder .hero-watch-img {
