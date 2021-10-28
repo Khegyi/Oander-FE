@@ -10,6 +10,11 @@ $("#subscribe_btn").on("click", (e) => {
   }
 });
 
+$("#scroll-top").on("click", (e) => {
+  e.preventDefault();
+  $(document).scrollTop(0);
+});
+
 const getCards = () => {
   $.when($.getJSON("data/data.json"), $.ready).done(function (data) {
     data[0].forEach((card, index) => {

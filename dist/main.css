@@ -239,7 +239,7 @@ footer {
       border-radius: 0;
       border: 0;
       background-color: #000;
-      font-weight: 500;
+      font-family: "MontserratSemiBold";
       font-size: 1rem;
       line-height: 1.75rem; }
       footer .wrap .subscribtion .subscribe-form form .btn:hover {
@@ -251,13 +251,17 @@ footer {
       color: #ff0000d5; }
   footer .lifter {
     border-top: 1px solid rgba(46, 46, 46, 0.15);
-    height: 53px; }
+    height: 53px;
+    cursor: pointer;
+    transition: background-color 0.5s; }
     footer .lifter .nav-link {
       height: 100%;
       display: flex;
       justify-content: center; }
       footer .lifter .nav-link img.chevron_icon {
         transform: rotate(-90deg); }
+    footer .lifter:hover {
+      background-color: rgba(41, 41, 41, 0.1); }
 
 @media (max-width: 575.98px) {
   .breakpoint-changer {
