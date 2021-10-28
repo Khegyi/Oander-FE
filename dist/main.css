@@ -108,6 +108,8 @@ header {
       font-family: "MontserratSemiBold";
       font-size: 1rem;
       line-height: 1.75rem; }
+      .content .hero .card .card-btn:hover {
+        background-color: #292929; }
     .content .hero .card .hero-watch-holder {
       overflow: hidden; }
       .content .hero .card .hero-watch-holder .hero-watch-img {
@@ -190,7 +192,8 @@ footer {
   background-color: #fff; }
   footer .wrap {
     margin: 0 auto;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    padding: 0 20px; }
     footer .wrap h4 {
       color: #3a3a3a;
       font-family: "MontserratBold";
@@ -230,6 +233,8 @@ footer {
       font-weight: 500;
       font-size: 1rem;
       line-height: 1.75rem; }
+      footer .wrap .subscribtion .subscribe-form form .btn:hover {
+        background-color: #292929; }
     footer .wrap .subscribtion .subscribe-form form .error-message {
       display: none;
       margin: 15px 0;

@@ -115,6 +115,9 @@ header {
         font-family: $font-semibold;
         font-size: 1rem;
         line-height: 1.75rem;
+        &:hover {
+          background-color: $main-color;
+        }
       }
       .hero-watch-holder {
         overflow: hidden;
@@ -219,6 +222,7 @@ footer {
   .wrap {
     margin: 0 auto;
     margin-bottom: 40px;
+    padding: 0 20px;
     h4 {
       color: $maintext-color;
       font-family: $font-bold;
@@ -277,6 +281,9 @@ footer {
             font-weight: 500;
             font-size: 1rem;
             line-height: 1.75rem;
+            &:hover {
+              background-color: $main-color;
+            }
           }
           .error-message {
             display: none;
